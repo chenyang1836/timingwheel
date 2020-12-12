@@ -108,7 +108,7 @@ Kafka 的层级时间轮实现中，利用了 Java 内置的 DelayQueue 结构�
 
 ## 五、Golang 实现要点
 
-[timingwheel](http://git.qxtv1.com/st52/timingwheel) 中的 Golang 实现，基本上都是参考 Kafka 的层级时间轮的原理来实现的。
+[timingwheel](https://github.com/chenyang1836/timingwheel) 中的 Golang 实现，基本上都是参考 Kafka 的层级时间轮的原理来实现的。
 
 因为 Golang 中没有现成的 DelayQueue 结构，所以自己实现了一个 [DelayQueue](http://git.qxtv1.com/st52/timingwheel)，其中：
 
@@ -117,7 +117,7 @@ Kafka 的层级时间轮实现中，利用了 Java 内置的 DelayQueue 结构�
 
 ## 六、相关阅读
 
-* [timingwheel - Golang 实现源码](http://git.qxtv1.com/st52/timingwheel)
+* [timingwheel - Golang 实现源码](https://github.com/chenyang1836/timingwheel)
 * [Apache Kafka, Purgatory, and Hierarchical Timing Wheels](https://www.confluent.io/blog/apache-kafka-purgatory-hierarchical-timing-wheels/)
 * [Kafka Timer 实现源码](https://github.com/apache/kafka/tree/3cdc78e6bb1f83973a14ce1550fe3874f7348b05/core/src/main/scala/kafka/utils/timer)
 * [本项目原始开源地址](https://github.com/RussellLuo/timingwheel)
