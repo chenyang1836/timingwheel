@@ -27,7 +27,7 @@ Golang 内置的 Timer 是采用最小堆来实现的，创建和删除的时间
 * 简单时间轮（Simple Timing Wheel）—— 比如 Netty4 的 [HashedWheelTimer](https://netty.io/4.0/api/io/netty/util/HashedWheelTimer.html)。
 * 层级时间轮（Hierarchical Timing Wheels）—— 比如 Kafka 的 [Purgatory](https://www.confluent.io/blog/apache-kafka-purgatory-hierarchical-timing-wheels/)。
 
-参考 Kafka 的层级时间轮实现（基于 Java/Scala 语言），我依葫芦画瓢实现了一个 Golang 版本的层级时间轮，实现源码作为个人项目放到了 [git.qxtv1.com](http://git.qxtv1.com/st52/timingwheel)。
+参考 Kafka 的层级时间轮实现（基于 Java/Scala 语言），我依葫芦画瓢实现了一个 Golang 版本的层级时间轮，实现源码作为个人项目放到了 [https://github.com/chenyang1836/](https://github.com/chenyang1836/)。
 
 下面我们来看看简单时间轮、层级时间轮、Kafka 的层级时间轮变体的实现原理，以及 Golang 实现中的一些要点。
 
